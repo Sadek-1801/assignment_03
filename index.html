@@ -47,8 +47,8 @@
   </head>
 
   <body class="font-manrope">
-    <header class="">
-      <nav class="container mx-auto lg:py-10 px-8">
+    <header class="mb-20 px-8">
+      <nav class="container mx-auto lg:py-10 ">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -73,39 +73,26 @@
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-4xl font-extrabold text-title">Hockeye<span class="text-btn-bg">’</span>s</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Item 3</a></li>
+            <ul class="menu menu-horizontal px-1 text-[#424247]">
+              <li><a class="text-btn-bg font-bold">Home</a></li>
+              <li><a class="">About</a></li>
+              <li><a class="">Pages</a></li>
+              <li><a class="">Blog</a></li>
+              <li><a class="">Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn">Button</a>
+          <div class="navbar-end gap-6">
+            <i class="fa-solid fa-magnifying-glass text-xl hidden lg:flex"></i>
+            <a class="rounded-lg bg-btn-bg py-4 px-6 text-white hover:bg-slate-200 hover:text-black text-xl font-bold border border-btn-bg cursor-pointer">Get Ticket</a>
           </div>
         </div>
       </nav>
-      <div class="container mx-auto lg:mb-32">
+      <div class="container mx-auto lg:mb-32 my- relative">
         <div class="carousel">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./Images/1.png" class="w-full rounded-lg object-cover" />
@@ -142,11 +129,15 @@
             </div>
           </div>
         </div>
+        <div class="rounded-2xl bg-[#131318] w-full lg:w-1/2 lg:absolute lg:bottom-8 lg:right-8 text-white p-8">
+          <h2 class="font-extrabold text-2xl mb-4">Meet All the Heroes of the Field</h2>
+          <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
       </div>
     </header>
     <main>
       <!-- radial progress bas section -->
-      <section class="container mx-auto lg:mb-32">
+      <section class="container mx-auto lg:mb-32 mb-20 px-8">
         <div
           class="flex flex-col items-center justify-center lg:max-w-3xl mx-auto text-center border-dotted border-y-2 bg-white"
         >
@@ -158,29 +149,16 @@
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
-        <div class="flex flex-col lg:flex-row justify-around gap-8">
-          <div class="card">
-            <figure class="px-10 pt-10 relative">
-              <img src="./Images/radial1.svg" alt="Shoes" class="rounded-xl" />
-              <p class="font-extrabold text-3xl text-title absolute top-20">
-                87%
-              </p>
-            </figure>
-            <div class="card-body items-center text-center">
+        <div class="flex flex-col lg:flex-row justify-around gap-8 px-10">
+            <div class="card-body items-center text-center space-y-4">
+              <div class="radial-progress text-[#FF4240] rotate-180 font-medium mb-4" style="--value:87; --size:8rem; --thickness: 0.7rem;"  role="progressbar"><span class="rotate-180 font-extrabold text-3xl text-title">87%</span></div>
               <h2 class="font-semibold text-title text-xl">Prayer Facility</h2>
               <p class="text-text-para">
                 Amet consectetur. Condimentum dignissim adipiscing .
               </p>
             </div>
-          </div>
-          <div class="card">
-            <figure class="px-10 pt-10 relative">
-              <img src="./Images/radial2.svg" alt="Shoes" class="rounded-xl" />
-              <p class="font-extrabold text-3xl text-title absolute top-20">
-                95%
-              </p>
-            </figure>
-            <div class="card-body items-center text-center">
+            <div class="card-body items-center text-center space-y-4">
+              <div class="radial-progress text-[#49D293] rotate-180 font-medium mb-4" style="--value:95; --size:8rem; --thickness: 0.7rem;"  role="progressbar"><span class="rotate-180 font-extrabold text-3xl text-title">95%</span></div>
               <h2 class="font-semibold text-title text-xl">
                 Experienced Coach
               </h2>
@@ -188,39 +166,24 @@
                 Amet consectetur. Condimentum dignissim adipiscing .
               </p>
             </div>
-          </div>
-          <div class="card">
-            <figure class="px-10 pt-10 relative">
-              <img src="./Images/radial3.svg" alt="Shoes" class="rounded-xl" />
-              <p class="font-extrabold text-3xl text-title absolute top-20">
-                90%
-              </p>
-            </figure>
-            <div class="card-body items-center text-center">
+            <div class="card-body items-center text-center space-y-4">
+              <div class="radial-progress text-[#FFB546] rotate-180 font-medium mb-4" style="--value:90; --size:8rem; --thickness: 0.7rem;"  role="progressbar"><span class="rotate-180 font-extrabold text-3xl text-title">90%</span></div>
               <h2 class="font-semibold text-title text-xl">Senior Player</h2>
               <p class="text-text-para">
                 Amet consectetur. Condimentum dignissim adipiscing .
               </p>
             </div>
-          </div>
-          <div class="card">
-            <figure class="px-10 pt-10 relative">
-              <img src="./Images/radial4.svg" alt="Shoes" class="rounded-xl" />
-              <p class="font-extrabold text-3xl text-title absolute top-20">
-                80%
-              </p>
-            </figure>
-            <div class="card-body items-center text-center">
+            <div class="card-body items-center text-center space-y-4">
+              <div class="radial-progress text-[#4C8DF1] rotate-180 font-medium mb-4" style="--value:80; --size:8rem; --thickness: 0.7rem;"  role="progressbar"><span class="rotate-180 font-extrabold text-3xl text-title">80%</span></div>
               <h2 class="font-semibold text-title text-xl">Training Ground</h2>
               <p class="text-text-para">
                 Amet consectetur. Condimentum dignissim adipiscing .
               </p>
             </div>
-          </div>
         </div>
       </section>
       <!-- program section -->
-      <section class="container mx-auto lg:mb-32">
+      <section class="container mx-auto lg:mb-32 mb-20 px-8">
         <div
           class="flex flex-col items-center justify-center lg:max-w-3xl mx-auto text-center border-dotted border-y-2 bg-white"
         >
@@ -291,7 +254,7 @@
         </div>
       </section>
       <!-- products section -->
-      <section class="container mx-auto lg:mb-32">
+      <section class="container mx-auto lg:mb-32 mb-20 px-8">
         <div
           class="flex flex-col items-center justify-center lg:max-w-3xl mx-auto text-center border-dotted border-y-2 bg-white"
         >
@@ -563,7 +526,7 @@
         </div>
       </section>
       <!-- forms section -->
-      <section class="container mx-auto lg:mb-32">
+      <section class="container mx-auto lg:mb-32 mb-20 px-8">
         <div
           class="flex flex-col items-center justify-center lg:max-w-3xl mx-auto text-center border-dotted border-y-2 bg-white"
         >
@@ -648,9 +611,9 @@
           <h2 class="text-2xl font-extrabold text-title">Social Media</h2>
           <div>
             <div class="flex justify-center items-center gap-8 mt-6">
+              <span><i class="fa-brands fa-twitter text-2xl"></i></span>
               <span><i class="fa-brands fa-facebook text-2xl"></i></span>
-              <span><i class="fa-brands fa-x-twitter text-2xl"></i></span>
-              <span><i class="fa-brands fa-youtube text-2xl"></i></span>
+              <span><i class="fa-brands fa-instagram text-2xl"></i></span>
               <span><i class="fa-brands fa-github text-2xl"></i></span>
           </div>
           </div>
